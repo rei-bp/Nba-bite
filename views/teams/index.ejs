@@ -1,1 +1,6 @@
-😎😎😎
+<h3>Teams</h3>
+ <ul>
+    <% apiRes.forEach ( api => { %>
+        <li> <a href="/teams/<%= api.id %>"><%= api.full_name %> </a></li>
+   <% }) %>  
+</ul> 

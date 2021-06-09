@@ -6,7 +6,7 @@ const axios = require('axios')
 
 //config
 const app = express()
-const PORT = 2323
+const PORT = 2324
 
 //middleware stuff
 app.set('view engine', 'ejs')
