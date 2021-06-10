@@ -6,13 +6,13 @@ const axios = require('axios')
 
 //config
 const app = express()
-const PORT = 2324
+const PORT = 2325
 
 //middleware stuff
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: false }))
 app.use(layouts)
-
+app.use(express.static(__dirname + '/public/'))
 
 //controllers
 app.use('/teams', require('./routes/teams'))

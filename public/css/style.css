@@ -1,0 +1,234 @@
+* {
+    background-color: bisque;
+}
+
+.avgContainer {
+    display: grid;
+    font-size: small;
+    grid-template-columns: 60px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px; 
+    grid-template-rows: 20px 20px 20px 20px 20px;
+    grid-template-areas:
+        "avg avg avg avg avg avg avg avg avg avg avg avg avg avg avg avg avg avg avg avg avg"
+        "year min gp fgm fga fg3m fg3a ftm fta oreb dreb reb ast stl blk tov pf pts fg-pct fg3-pct ft-pct"
+        "b-year b-min b-gp b-fgm b-fga b-fg3m b-fg3a b-ftm b-fta b-oreb b-dreb b-reb b-ast b-stl b-blk b-tov b-pf b-pts b-fg-pct b-fg3-pct b-ft-pct";
+}
+.avgTitle {
+    grid-area: avg;
+    border: 1px solid black;
+}
+
+.year {
+    grid-area: year;
+    border: 1px solid black;
+}
+
+.min {
+    grid-area: min;
+    border: 1px solid black;
+}
+
+.gp {
+    grid-area: gp;
+    border: 1px solid black;
+}
+
+.fgm {
+    grid-area: fgm;
+    border: 1px solid black;
+}
+
+.fga {
+    grid-area: fga;
+    border: 1px solid black;
+}
+
+.fg3m {
+    grid-area: fg3m;
+    border: 1px solid black;
+}
+
+.fg3a {
+    grid-area: fg3a;
+    border: 1px solid black;
+}
+
+.ftm {
+    grid-area: ftm;
+    border: 1px solid black;
+}
+
+.fta {
+    grid-area: fta;
+    border: 1px solid black;
+}
+
+.oreb {
+    grid-area: oreb;
+    border: 1px solid black;
+}
+
+.dreb {
+    grid-area: dreb;
+    border: 1px solid black;
+}
+
+.reb {
+    grid-area: reb;
+    border: 1px solid black;
+}
+
+.ast {
+    grid-area: ast;
+    border: 1px solid black;
+}
+
+.stl {
+    grid-area: stl;
+    border: 1px solid black;
+}
+
+.blk {
+    grid-area: blk;
+    border: 1px solid black;
+}
+
+.tov {
+    grid-area: tov;
+    border: 1px solid black;
+}
+    
+.pf {
+    grid-area: pf;
+    border: 1px solid black;
+}
+
+.pts {
+    grid-area: pts;
+    border: 1px solid black;
+}
+
+.fg-pct {
+    grid-area: fg-pct;
+    border: 1px solid black;
+}
+
+.fg3-pct {
+    grid-area: fg3-pct;
+    border: 1px solid black;
+}
+
+.ft-pct {
+    grid-area: ft-pct;
+    border: 1px solid black;
+}
+
+
+
+
+.b-year {
+    grid-area: b-year;
+    border: 1px solid black;
+}
+
+.b-min {
+    grid-area: b-min;
+    border: 1px solid black;
+}
+
+.b-gp {
+    grid-area: b-gp;
+    border: 1px solid black;
+}
+
+.b-fgm {
+    grid-area: b-fgm;
+    border: 1px solid black;
+}
+
+.b-fga {
+    grid-area: b-fga;
+    border: 1px solid black;
+}
+
+.b-fg3m {
+    grid-area: b-fg3m;
+    border: 1px solid black;
+}
+
+.b-fg3a {
+    grid-area: b-fg3a;
+    border: 1px solid black;
+}
+
+.b-ftm {
+    grid-area: b-ftm;
+    border: 1px solid black;
+}
+
+.b-fta {
+    grid-area: b-fta;
+    border: 1px solid black;
+}
+
+.b-oreb {
+    grid-area: b-oreb;
+    border: 1px solid black;
+}
+
+.b-dreb {
+    grid-area: b-dreb;
+    border: 1px solid black;
+}
+
+.b-reb {
+    grid-area: b-reb;
+    border: 1px solid black;
+}
+
+.b-ast {
+    grid-area: b-ast;
+    border: 1px solid black;
+}
+
+.b-stl {
+    grid-area: b-stl;
+    border: 1px solid black;
+}
+
+.b-blk {
+    grid-area: b-blk;
+    border: 1px solid black;
+}
+
+.b-tov {
+    grid-area: b-tov;
+    border: 1px solid black;
+}
+    
+.b-pf {
+    grid-area: b-pf;
+    border: 1px solid black;
+}
+
+.b-pts {
+    grid-area: b-pts;
+    border: 1px solid black;
+}
+
+.b-fg-pct {
+    grid-area: b-fg-pct;
+    border: 1px solid black;
+}
+
+.b-fg3-pct {
+    grid-area: b-fg3-pct;
+    border: 1px solid black;
+}
+
+.b-ft-pct {
+    grid-area: b-ft-pct;
+    border: 1px solid black;
+}
+
+
+

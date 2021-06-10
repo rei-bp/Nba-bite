@@ -17,10 +17,25 @@ router.get('/search', (req, res) => {
 })
 
 router.get('/:id', (req, res) => {
-    console.log(req.params.id)
-    axios.get(`https://www.balldontlie.io/api/v1/players/${req.params.id}`)
-    .then (apiRes => {
-        console.log(apiRes.data)
+    
+    const axOne = axios.get(`https://www.balldontlie.io/api/v1/players/${req.params.id}`)
+    const axTwo = axios.get(`https://www.balldontlie.io/api/v1/season_averages?player_ids[]=${req.params.id}`)
+    axios.all([axOne, axTwo])
+    .then (axios.spread((...responses) => {
+        const resOne = responses[0]
+        const resTwo = responses[1]
+        res.render('players/detail.ejs', {resOne: resOne.data, resTwo: resTwo.data.data[0]})
+    }))
+    // .then (apiRes => {
+    //    res.render('players/detail.ejs', {apiRes: apiRes.data})
+    // })
+    // axios.get(`https://www.balldontlie.io/api/v1/season_averages?player_ids[]=${req.params.id}`)
+    // .then (apiStats => {
+    //     console.log(apiStats.data.data)
+    //     res.render('players/detail.ejs', {apiStats: apiStats.data.data} )
+    // })
+    .catch ((err) => {
+        console.log(err)
     })
 })
 
