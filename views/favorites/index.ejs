@@ -1,0 +1,7 @@
+<h2>Favorite Players</h2>
+<ul>
+    <% players.forEach ( resDb => { %>
+        <li> <form method="POST" action="/favorites/delete/<%= resDb.playerId %>?_method=DELETE"><a href="/favorites/<%= resDb.playerId %>"><%= resDb.firstName %> <%= resDb.lastName %> </a>
+            | <%= resDb.team %> <input type="submit" value="remove"></form> </li>
+   <% }) %>
+</ul>

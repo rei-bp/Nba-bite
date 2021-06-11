@@ -1,6 +1,8 @@
 <h1>Results</h1>
 <ul>
     <% apiRes.forEach ( api => { %>
-        <li> <a href="/players/<%= api.id %>"><%= api.first_name %> <%= api.last_name %> </a> | <%= api.team.full_name %> </li>
+        <li> <form action="/favorites/new/<%= api.id %>" method="POST"><a href="/players/<%= api.id %>"><%= api.first_name %> <%= api.last_name %> </a> | <%= api.team.full_name %> 
+        <input type="submit" value="Add to Favorites">
+        </form></li>
    <% }) %>  
 </ul> 
