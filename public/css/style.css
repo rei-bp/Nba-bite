@@ -3,123 +3,259 @@
 }
 
 .avgContainer {
-    display: grid;
-    font-size: small;
-    grid-template-columns: 60px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px; 
-    grid-template-rows: 20px 20px 20px 20px 20px;
-    grid-template-areas:
-        "avg avg avg avg avg avg avg avg avg avg avg avg avg avg avg avg avg avg avg avg avg"
-        "year min gp fgm fga fg3m fg3a ftm fta oreb dreb reb ast stl blk tov pf pts fg-pct fg3-pct ft-pct"
-        "b-year b-min b-gp b-fgm b-fga b-fg3m b-fg3a b-ftm b-fta b-oreb b-dreb b-reb b-ast b-stl b-blk b-tov b-pf b-pts b-fg-pct b-fg3-pct b-ft-pct";
+font-size: smaller;
+width: 720px;
 }
+
 .avgTitle {
-    grid-area: avg;
+    display: flex;
+    border: 1px solid black;
+    font-size: smaller;
+    border-bottom-color: crimson;
+}
+
+.statTitle {
+    display: flex;
+    font-size: smaller;
+    border: 1px solid black;
+    border-top-color: crimson;
+}
+
+.statRow1 {
+    display: flex;
+    font-size: smaller;
     border: 1px solid black;
 }
 
+
 .year {
-    grid-area: year;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 50px;
+    /* grid-area: year; */
 }
 
 .min {
-    grid-area: min;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    width: 50px;
+    border-right: 1px solid black;
 }
 
 .gp {
-    grid-area: gp;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 30px;
+    /* grid-area: gp; */
+    
 }
 
 .fgm {
-    grid-area: fgm;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 30px;
+    /* grid-area: fgm; */
 }
 
 .fga {
-    grid-area: fga;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 30px;
+    /* grid-area: fga; */
 }
 
 .fg3m {
-    grid-area: fg3m;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 40px;
+    /* grid-area: fg3m; */
 }
 
 .fg3a {
-    grid-area: fg3a;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 40px;
+    /* grid-area: fg3a; */
 }
 
 .ftm {
-    grid-area: ftm;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 30px;
+    /* grid-area: ftm; */
 }
 
 .fta {
-    grid-area: fta;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 30px;
+    /* grid-area: fta; */
 }
 
 .oreb {
-    grid-area: oreb;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 40px;
+    /* grid-area: oreb; */
 }
 
 .dreb {
-    grid-area: dreb;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 40px;
+    /* grid-area: dreb; */
 }
 
 .reb {
-    grid-area: reb;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 30px;
+    /* grid-area: reb; */
 }
 
 .ast {
-    grid-area: ast;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 30px;
+    /* grid-area: ast; */
 }
 
 .stl {
-    grid-area: stl;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 30px;
+    /* grid-area: stl; */
 }
 
 .blk {
-    grid-area: blk;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 30px;
+    /* grid-area: blk; */
 }
 
 .tov {
-    grid-area: tov;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 30px;
+    /* grid-area: tov; */
 }
     
 .pf {
-    grid-area: pf;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 30px;
+    /* grid-area: pf; */
 }
 
 .pts {
-    grid-area: pts;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 30px;
+    /* grid-area: pts; */
 }
 
 .fg-pct {
-    grid-area: fg-pct;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 30px;
+    /* grid-area: fg-pct; */
 }
 
 .fg3-pct {
-    grid-area: fg3-pct;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    border-right: 1px solid black;
+    width: 40px;
+    /* grid-area: fg3-pct; */
 }
 
 .ft-pct {
-    grid-area: ft-pct;
-    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    width: 30px;
+    /* grid-area: ft-pct; */
 }
 
 
@@ -229,6 +365,5 @@
     grid-area: b-ft-pct;
     border: 1px solid black;
 }
-
 
 
