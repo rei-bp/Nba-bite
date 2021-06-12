@@ -7,7 +7,7 @@ const methodOverride = require('method-override')
 
 //config
 const app = express()
-const PORT = 2325
+const PORT = 2408
 
 //middleware stuff
 app.set('view engine', 'ejs')

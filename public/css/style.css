@@ -7,11 +7,22 @@ font-size: smaller;
 width: 720px;
 }
 
+.seasonInput {
+    width: 50px;
+}
+
+.seasonSubmit {
+    background-color: cyan;
+}
+
 .avgTitle {
     display: flex;
+    align-items: center;
     border: 1px solid black;
     font-size: smaller;
     border-bottom-color: crimson;
+    height: 40px;
+    font-size: x-large;
 }
 
 .statTitle {
@@ -21,7 +32,7 @@ width: 720px;
     border-top-color: crimson;
 }
 
-.statRow1 {
+.statRow {
     display: flex;
     font-size: smaller;
     border: 1px solid black;
@@ -45,7 +56,7 @@ width: 720px;
     justify-content: center;
     align-content: center;
     height: 25px;
-    width: 50px;
+    width: 40px;
     border-right: 1px solid black;
 }
 
@@ -258,112 +269,35 @@ width: 720px;
     /* grid-area: ft-pct; */
 }
 
-
-
-
-.b-year {
-    grid-area: b-year;
-    border: 1px solid black;
-}
-
-.b-min {
-    grid-area: b-min;
-    border: 1px solid black;
-}
-
-.b-gp {
-    grid-area: b-gp;
-    border: 1px solid black;
-}
-
-.b-fgm {
-    grid-area: b-fgm;
-    border: 1px solid black;
-}
-
-.b-fga {
-    grid-area: b-fga;
-    border: 1px solid black;
-}
-
-.b-fg3m {
-    grid-area: b-fg3m;
-    border: 1px solid black;
-}
-
-.b-fg3a {
-    grid-area: b-fg3a;
-    border: 1px solid black;
-}
-
-.b-ftm {
-    grid-area: b-ftm;
-    border: 1px solid black;
-}
-
-.b-fta {
-    grid-area: b-fta;
-    border: 1px solid black;
-}
-
-.b-oreb {
-    grid-area: b-oreb;
-    border: 1px solid black;
-}
-
-.b-dreb {
-    grid-area: b-dreb;
-    border: 1px solid black;
-}
-
-.b-reb {
-    grid-area: b-reb;
-    border: 1px solid black;
-}
-
-.b-ast {
-    grid-area: b-ast;
-    border: 1px solid black;
-}
-
-.b-stl {
-    grid-area: b-stl;
-    border: 1px solid black;
-}
-
-.b-blk {
-    grid-area: b-blk;
-    border: 1px solid black;
-}
-
-.b-tov {
-    grid-area: b-tov;
-    border: 1px solid black;
-}
+table {
+    text-align: center;
+    font-size: x-small;
+    border-collapse: collapse;
+    border-left:.5px solid black;
     
-.b-pf {
-    grid-area: b-pf;
-    border: 1px solid black;
 }
 
-.b-pts {
-    grid-area: b-pts;
-    border: 1px solid black;
+th {
+    padding: 3px;
+    border-bottom: .5px solid black;
+    border-right: .5px solid black;
 }
 
-.b-fg-pct {
-    grid-area: b-fg-pct;
-    border: 1px solid black;
-}
+td {
+    padding: 5px;
+    border-bottom: .5px solid black;
+    border-right: .5px solid black;
 
-.b-fg3-pct {
-    grid-area: b-fg3-pct;
-    border: 1px solid black;
-}
-
-.b-ft-pct {
-    grid-area: b-ft-pct;
-    border: 1px solid black;
 }
 
 
+
+caption {
+    text-align: left;
+    font-size: 1.5em;
+    border:.5px solid black;
+}
+
+.statContainer {
+    overflow-x: scroll;
+}

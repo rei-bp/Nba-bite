@@ -1,0 +1,88 @@
+<h2><%= first %> <%= last %> </h2>  
+
+
+<!-- <div class="avgContainer">
+    <div class="avgTitle a">SEASON AVERAGE</div>
+    <div class="statTitle">
+        <div class="year a">YEAR</div>
+        <div class="min a">MIN</div>
+        <div class="gp a">GP</div>
+        <div class="fgm a">FGM</div>
+        <div class="fga a">FGA</div>
+        <div class="fg3m a">FG3M</div>
+        <div class="fg3a a">FG3A</div>
+        <div class="ftm a">FTM</div>
+        <div class="fta a">FTA</div>
+        <div class="oreb a">OREB</div>
+        <div class="dreb a">DREB</div>
+        <div class="reb a">REB</div>
+        <div class="ast a">AST</div>
+        <div class="stl a">STL</div>
+        <div class="blk a">BLK</div>
+        <div class="tov a">TOV</div>
+        <div class="pf a">PF</div>
+        <div class="pts a">PTS</div>
+        <div class="fg-pct a">FG%</div>
+        <div class="fg3-pct a">FG3%</div>
+        <div class="ft-pct a">FT%</div>
+    </div>
+</div> -->
+<div class='statContainer'>
+<table>
+<caption>SEASON AVERAGE</caption>
+<thead>
+    <tr>
+        <th>YEAR</th>
+        <th>MIN</th>
+        <th>GP</th>
+        <th>FGM</th>
+        <th>FGA</th>
+        <th>FG3M</th>
+        <th>FG3A</th>
+        <th>FTM</th>
+        <th>FTA</th>
+        <th>OREB</th>
+        <th>DREB</th>
+        <th>REB</th>
+        <th>AST</th>
+        <th>STL</th>
+        <th>BLK</th>
+        <th>TOV</th>
+        <th>PF</th>
+        <th>PTS</th>
+        <th>FG%</th>
+        <th>FG3%</th>
+        <th>FT%</th>
+    </tr>
+</thead>
+<tbody>
+    <% statsRes.forEach (res => { %>
+    <tr>
+        <td><%= res.year %> </td>
+        <td><%= res.min%> </td>
+        <td><%= res.gp %> </td>
+        <td><%= res.fgm %> </td>
+        <td><%= res.fga %> </td>
+        <td><%= res.fg3m %> </td>
+        <td><%= res.fg3a %> </td>
+        <td><%= res.ftm %> </td>
+        <td><%= res.fta %> </td>
+        <td><%= res.oreb %> </td>
+        <td><%= res.dreb %> </td>
+        <td><%= res.reb %> </td>
+        <td><%= res.ast %> </td>
+        <td><%= res.stl %> </td>
+        <td><%= res.blk %> </td>
+        <td><%= res.tov %> </td>
+        <td><%= res.pf %> </td>
+        <td><%= res.pts %> </td>
+        <td><%= res.fg_pct %> </td>
+        <td><%= res.fg3_pct %> </td>
+        <td><%= res.ft_pct %> </td>
+    </tr>
+
+    <% }) %> 
+</tbody>
+</table>
+</div>
+       
