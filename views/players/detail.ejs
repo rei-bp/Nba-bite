@@ -8,13 +8,14 @@
 <br> Height: <%= resOne.height_feet %>' <%= resOne.height_inches %>"
 
 <div>
-<form action="/players/season/<%= resOne.id %>/<%= resOne.first_name %>/<%= resOne.last_name %>" method="GET">
+Select year to get season average stats
+<form action="/players/addseason/<%= resOne.id %>/<%= resOne.first_name %>/<%= resOne.last_name %>" method="POST">
     <input type="integer" class="seasonInput" placeholder="2020" name="season">
     <input type="submit" class="seasonSubmit" value="Get Stats">
 </form>
 </div>
 
-<div class="avgContainer">
+<!-- <div class="avgContainer">
     <div class="avgTitle a">SEASON AVERAGE</div>
     <div class="statTitle">
         <div class="year a">YEAR</div>
@@ -39,31 +40,4 @@
         <div class="fg3-pct a">FG3%</div>
         <div class="ft-pct a">FT%</div>
     </div>
-   <div class="statRow">
-        <div class="year b"><%= resTwo.season %></div>
-        <div class="min b"><%= resTwo.min %></div>
-        <div class="gp b"><%= resTwo.games_played %></div>
-        <div class="fgm b"><%= resTwo.fgm %></div>
-        <div class="fga b"><%= resTwo.fga %></div>
-        <div class="fg3m b"><%= resTwo.fg3m %></div>
-        <div class="fg3a b"><%= resTwo.fg3a %></div>
-        <div class="ftm b"><%= resTwo.ftm %></div>
-        <div class="fta b"><%= resTwo.fta %></div>
-        <div class="oreb b"><%= resTwo.oreb %></div>
-        <div class="dreb b"><%= resTwo.dreb %></div>
-        <div class="reb b"><%= resTwo.reb %></div>
-        <div class="ast b"><%= resTwo.ast %></div>
-        <div class="stl b"><%= resTwo.stl %></div>
-        <div class="blk b"><%= resTwo.blk %></div>
-        <div class="tov b"><%= resTwo.turnover%></div>
-        <div class="pf b"><%= resTwo.pf %></div>
-        <div class="pts b"><%= resTwo.pts %></div>
-        <div class="fg-pct b"><%= resTwo.fg_pct %></div>
-        <div class="fg3-pct b"><%= resTwo.fg3_pct %></div>
-        <div class="ft-pct b"><%= resTwo.ft_pct %></div>
-    </div>
-</div>
-
-<!-- <button onclick="newStatLine(result)">test</button>
-
-<script src="/js/script.js"></script> -->
+</div> -->

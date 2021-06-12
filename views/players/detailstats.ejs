@@ -1,6 +1,11 @@
 <h2><%= first %> <%= last %> </h2>  
 
-
+<div>
+    <form action="/players/addseason/<%= id %>/<%= first %>/<%= last %>" method="POST">
+        <input type="integer" class="seasonInput" placeholder="2020" name="season">
+        <input type="submit" class="seasonSubmit" value="Get More Stats">
+    </form>
+    </div>
 <!-- <div class="avgContainer">
     <div class="avgTitle a">SEASON AVERAGE</div>
     <div class="statTitle">
@@ -53,6 +58,7 @@
         <th>FG%</th>
         <th>FG3%</th>
         <th>FT%</th>
+        <th></th>
     </tr>
 </thead>
 <tbody>
@@ -79,6 +85,10 @@
         <td><%= res.fg_pct %> </td>
         <td><%= res.fg3_pct %> </td>
         <td><%= res.ft_pct %> </td>
+        <td>
+            <form action="/players/delete/<%= res.playerId %>/<%= first %>/<%= last %>/<%= res.year %>?_method=DELETE" method="POST">
+            <input type="submit" value="🗑"></form>
+        </td>
     </tr>
 
     <% }) %> 

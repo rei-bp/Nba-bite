@@ -290,7 +290,9 @@ td {
 
 }
 
-
+#delete {
+    width: 25px;
+}
 
 caption {
     text-align: left;
@@ -300,4 +302,11 @@ caption {
 
 .statContainer {
     overflow-x: scroll;
+}
+
+.statContainer::-webkit-scrollbar {
+    width:6px;border-left:1px solid #E6ECF8;
+}
+.statContainer::-webkit-scrollbar-thumb{
+    background-color:#d6872c;
 }
