@@ -76,9 +76,13 @@ router.post('/addseason/:id/:first/:last', (req, res) => {
             fg_pct: addStats.fg_pct,
             fg3_pct: addStats.fg3_pct,
             ft_pct: addStats.ft_pct
+        }).catch ((err)=> {
+            console.log(err)
         })
     }).then (findStats => {  
         res.redirect(`/players/showseason/${id}/${first}/${last}`)
+    }).catch ((err) => {
+        console.log(err)
     })
 })
 

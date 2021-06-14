@@ -1,10 +1,41 @@
 * {
-    background-color: bisque;
+    background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
 }
 
 .avgContainer {
 font-size: smaller;
 width: 720px;
+}
+
+.navTitle {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-size: 4em;
+    color: #FAFAFA;
+    background-image: url("https://images.unsplash.com/photo-1525973132219-a04334a76080?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1277&q=80");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    /* -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px; */
+    height: 100px;
+    width: 500px;
+}
+
+
+.mainTitle {
+    
+    display:flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    /* color: #374d87; */
+    /* background-clip: text;
+    -webkit-background-clip: text; */
 }
 
 .seasonInput {

@@ -8,9 +8,10 @@ const db = require('../models')
 router.get('/', (req, res) => {
     db.players.findAll({    
         attributes: ['firstName', 'lastName', 'playerId', 'team']
-    })
-    .then (players => {
+    }).then (players => {
         res.render('favorites/index.ejs', {players: players})
+    }).catch ((err) => {
+        console.log(err)
     })
 })
 
