@@ -8,6 +8,34 @@ font-size: smaller;
 width: 720px;
 }
 
+.navHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+
+    position: absolute;
+    background-color: transparent;
+    background-clip: content-box;
+    text-align: left;
+    margin-left: -360px;
+    margin-top: -3px;
+}
+
+.navLink {
+    background-color: transparent;
+    color: #031550;
+    font-style: italic;
+    font-weight: bold;
+    font-size: x-small;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: #fafafa;
+}
+
 .navTitle {
     display: flex;
     align-content: center;
@@ -22,8 +50,9 @@ width: 720px;
     border-radius: 20px;
     /* -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px; */
-    height: 100px;
+    height: 110px;
     width: 500px;
+    margin: 0;
 }
 
 
@@ -38,306 +67,149 @@ width: 720px;
     -webkit-background-clip: text; */
 }
 
+.favorites {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+.detailStats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
 .seasonInput {
     width: 50px;
+    border-radius: 20px;
+    border:1px solid #031550;
 }
 
 .seasonSubmit {
-    background-color: cyan;
-}
-
-.avgTitle {
-    display: flex;
-    align-items: center;
-    border: 1px solid black;
-    font-size: smaller;
-    border-bottom-color: crimson;
-    height: 40px;
-    font-size: x-large;
-}
-
-.statTitle {
-    display: flex;
-    font-size: smaller;
-    border: 1px solid black;
-    border-top-color: crimson;
-}
-
-.statRow {
-    display: flex;
-    font-size: smaller;
-    border: 1px solid black;
+    background-color: #031550;
+    border-radius: 20px;
+    border:1px solid #a1b2df;
+    color: #fafafa;
+    font-style: italic;
 }
 
 
-.year {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 50px;
-    /* grid-area: year; */
+.deleteButton {
+    background-color: #031550;
+    border-radius: 20px;
+    border:1px solid #a1b2df;
+    color: #fafafa;
 }
 
-.min {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    width: 40px;
-    border-right: 1px solid black;
+.deleteButton:hover {
+    background-color:#a1b2df;
+    border:1px solid #a1b2df;
+
+} 
+
+.seasonSubmit:hover {
+    background-color: #a1b2df;
+    border:1px solid #a1b2df;
 }
 
-.gp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 30px;
-    /* grid-area: gp; */
-    
-}
-
-.fgm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 30px;
-    /* grid-area: fgm; */
-}
-
-.fga {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 30px;
-    /* grid-area: fga; */
-}
-
-.fg3m {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 40px;
-    /* grid-area: fg3m; */
-}
-
-.fg3a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 40px;
-    /* grid-area: fg3a; */
-}
-
-.ftm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 30px;
-    /* grid-area: ftm; */
-}
-
-.fta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 30px;
-    /* grid-area: fta; */
-}
-
-.oreb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 40px;
-    /* grid-area: oreb; */
-}
-
-.dreb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 40px;
-    /* grid-area: dreb; */
-}
-
-.reb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 30px;
-    /* grid-area: reb; */
-}
-
-.ast {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 30px;
-    /* grid-area: ast; */
-}
-
-.stl {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 30px;
-    /* grid-area: stl; */
-}
-
-.blk {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 30px;
-    /* grid-area: blk; */
-}
-
-.tov {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 30px;
-    /* grid-area: tov; */
-}
-    
-.pf {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 30px;
-    /* grid-area: pf; */
-}
-
-.pts {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 30px;
-    /* grid-area: pts; */
-}
-
-.fg-pct {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 30px;
-    /* grid-area: fg-pct; */
-}
-
-.fg3-pct {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    border-right: 1px solid black;
-    width: 40px;
-    /* grid-area: fg3-pct; */
-}
-
-.ft-pct {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 25px;
-    width: 30px;
-    /* grid-area: ft-pct; */
-}
 
 table {
     text-align: center;
     font-size: x-small;
     border-collapse: collapse;
-    border-left:.5px solid black;
-    
+    border-left:.5px solid #a1b2df;
 }
 
 th {
     padding: 3px;
-    border-bottom: .5px solid black;
-    border-right: .5px solid black;
+    border-bottom: .5px solid #a1b2df;
+    border-right: .5px solid #a1b2df;
 }
 
 td {
     padding: 5px;
-    border-bottom: .5px solid black;
-    border-right: .5px solid black;
+    border-bottom: .5px solid #a1b2df;
+    border-right: .5px solid #a1b2df;
 
 }
 
-#delete {
-    width: 25px;
+td:hover::after {
+    background-color: #a1b2df;
+    top: -1000px;
+    z-index: -1;
+}
+
+.tdStat:hover {
+    background-color: #031550;
+    font-weight: bold;
+    color: #fafafa;
+}
+
+
+input::placeholder {
+    text-align: center;
+}
+
+a {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#a1b2df;
+    text-decoration: underline;
 }
 
 caption {
     text-align: left;
-    font-size: 1.5em;
-    border:.5px solid black;
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    color: #031550;
+    border:.5px solid #a1b2df;
+    background-color: #a1b2df;
+    height: 25px;
+    align-content: center;
+    align-items: center;
+    padding-top: 4px;
+    padding-left: 3px;
+
+}
+
+.nameTitle {
+    text-align: center;
+    color: #031550;
+    font-style: italic;
+    text-decoration: underline;
+
+}
+
+.table {
+    justify-content: center;
 }
 
 .statContainer {
     overflow-x: scroll;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .statContainer::-webkit-scrollbar {
-    width:6px;border-left:1px solid #E6ECF8;
+    width:6px;border-left:1px solid #fafafa;
 }
 .statContainer::-webkit-scrollbar-thumb{
-    background-color:#d6872c;
+    background-color:#a1b2df;
+}
+
+.formContainer {
+    display: flex;
+    align-items: start;
 }
