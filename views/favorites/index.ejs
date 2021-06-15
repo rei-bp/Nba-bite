@@ -1,5 +1,5 @@
 <div class="favorites">
-    <h2 class="nameTitle">Favorite Players</h2>
+    <h1 class="nameTitle">Favorite Players</h1>
     <% players.forEach ( resDb => { %>
     <div class="resultsContainer">
         <form class="resultsForm" method="POST" action="/favorites/delete/<%= resDb.playerId %>?_method=DELETE">

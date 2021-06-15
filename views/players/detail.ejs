@@ -1,19 +1,20 @@
 
 
 <div class="detail">
-<h2 class="nameTitle"><%= resOne.first_name %> <%= resOne.last_name %> </h2>  
+<h1 class="nameTitle detailTitle"><%= resOne.first_name %> <%= resOne.last_name %> </h1>  
 
 <br>Team: <%= resOne.team.full_name %>
 
 <br> Height: <%= resOne.height_feet %>' <%= resOne.height_inches %>"
 
-    <div class="detailForm">
-        Select year to get season average stats
+<br><p class="teamResults">Select year to get season average stats</p>
+
+    <div class="detailDiv">
         <form class="detailForm" action="/players/addseason/<%= resOne.id %>/<%= resOne.first_name %>/<%= resOne.last_name %>" method="POST">
             
             <input type="integer" class="seasonInput" placeholder="2020" name="season">
             
-            <input type="submit" class="seasonSubmit" value="Get Stats">
+            <input type="submit" class="seasonSubmit" value="Go!">
         </form>
     </div>
 </div>

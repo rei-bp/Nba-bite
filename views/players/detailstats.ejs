@@ -1,7 +1,11 @@
 <div class="detailStats">
-    <div class="nameTitle"><h2><%= first %> <%= last %> </h2></div>  
+
+    <h1 class="nameTitle"><%= first %> <%= last %> </h1>
 
     <div class='statContainer'>
+
+       
+
     <table class='table'>
     <caption>SEASON AVERAGE</caption>
     <thead>
@@ -62,13 +66,18 @@
 
         <% }) %> 
     </tbody>
+    <tfoot>
+    </tfoot>
     </table>
     </div>
-    <div class="formContainer">
-        <form action="/players/addseason/<%= id %>/<%= first %>/<%= last %>" method="POST">
+        
+        <form class="formContainer" action="/players/addseason/<%= id %>/<%= first %>/<%= last %>" method="POST">
+            
             <input type="integer" class="seasonInput" placeholder="2020" name="season">
+            
             <input type="submit" class="seasonSubmit" value="Go!">
+        
         </form>
-    </div>
+
 </div>
        
