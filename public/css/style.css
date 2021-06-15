@@ -3,6 +3,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 .avgContainer {
 font-size: smaller;
 width: 720px;
@@ -43,7 +44,7 @@ width: 720px;
     justify-content: center;
     font-style: italic;
     font-size: 4em;
-    color: #FAFAFA;
+    color: #031550;
     background-image: url("https://images.unsplash.com/photo-1525973132219-a04334a76080?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1277&q=80");
     background-size: cover;
     background-position: center;
@@ -55,9 +56,14 @@ width: 720px;
     margin: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .mainTitle {
-    
     display:flex;
     align-items: center;
     align-content: center;
@@ -67,28 +73,55 @@ width: 720px;
     -webkit-background-clip: text; */
 }
 
-.favorites {
+.homeLink {
+    background-color: transparent;
+}
+
+
+.favorites, .playerIndex, .home, .results, .detail  {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
+    width: 500px;
+    background-color: #a1b2df;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding-bottom: 20px;
 }
-
 
 
 .detailStats {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+/* .detailStats {
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     align-content: center;
-}
+} */
 
 .seasonInput {
     width: 50px;
     border-radius: 20px;
     border:1px solid #031550;
+    font-size: small;
+}
+
+.playerInput {
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    font-size: small;
+    background-color: #ffffff;
+    text-align: center;
 }
 
 .seasonSubmit {
@@ -105,17 +138,19 @@ width: 720px;
     border-radius: 20px;
     border:1px solid #a1b2df;
     color: #fafafa;
+    font-size: small;
 }
 
 .deleteButton:hover {
-    background-color:#a1b2df;
-    border:1px solid #a1b2df;
+    background-color:#fafafa;
+    border:1px solid #fafafa;
 
 } 
 
 .seasonSubmit:hover {
-    background-color: #a1b2df;
-    border:1px solid #a1b2df;
+    background-color: #fafafa;
+    border:1px solid #031550;
+    color: #031550;
 }
 
 
@@ -163,7 +198,7 @@ a {
 }
 
 a:hover {
-    color:#a1b2df;
+    color:#fafafa;
     text-decoration: underline;
 }
 
@@ -188,6 +223,7 @@ caption {
     color: #031550;
     font-style: italic;
     text-decoration: underline;
+    background-color: transparent;
 
 }
 
@@ -212,4 +248,44 @@ caption {
 .formContainer {
     display: flex;
     align-items: start;
+    background-color: transparent;
+}
+
+.playerSearch {
+    background-color: transparent;
+}
+
+.playerForm {
+    background-color: transparent;
+}
+
+.resultsForm {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.resultsContainer {
+    display: flex;
+    background-color: transparent;
+    padding-bottom: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resLink {
+    background-color: transparent;
+    color: #031550;
+}
+
+.teamResults {
+    font-size: small;
+    background-color: transparent;
+}
+
+.detailForm {
+    background-color: transparent;
 }

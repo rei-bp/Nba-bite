@@ -1,9 +1,13 @@
 <div class="favorites">
     <h2 class="nameTitle">Favorite Players</h2>
-    <ul>
     <% players.forEach ( resDb => { %>
-        <li> <form method="POST" action="/favorites/delete/<%= resDb.playerId %>?_method=DELETE"><a href="/favorites/<%= resDb.playerId %>"><%= resDb.firstName %> <%= resDb.lastName %> </a>
-            | <%= resDb.team %> <input class="deleteButton" type="submit" value="🗑"></form> </li>
+    <div class="resultsContainer">
+        <form class="resultsForm" method="POST" action="/favorites/delete/<%= resDb.playerId %>?_method=DELETE">
+            
+            <a class="resLink" href="/favorites/<%= resDb.playerId %>"> <%= resDb.firstName %> <%= resDb.lastName %> </a>
+            <span class="teamResults"> <%= resDb.team %> </span>
+            <input class="deleteButton" type="submit" value="🗑">
+        </form>
+        </div>
     <% }) %>
-    </ul>
 </div>
