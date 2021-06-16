@@ -31,13 +31,15 @@
             <th>FG%</th>
             <th>FG3%</th>
             <th>FT%</th>
-            <th></th>
+            <th class="thDelete"></th>
         </tr>
     </thead>
     <tbody>
         <% statsRes.forEach (res => { %>
         <tr class='statRow'>
-            <td><strong><%= res.year %></strong> </td>
+
+            <td class="tdYear"> <strong> <%= res.year %> </strong> </td>
+
             <td class='tdStat'><%= res.min%> </td>
             <td class='tdStat'><%= res.gp %> </td>
             <td class='tdStat'><%= res.fgm %> </td>
@@ -58,9 +60,9 @@
             <td class='tdStat'><%= res.fg_pct %> </td>
             <td class='tdStat'><%= res.fg3_pct %> </td>
             <td class='tdStat'><%= res.ft_pct %> </td>
-            <td>
-                <form action="/players/delete/<%= res.playerId %>/<%= first %>/<%= last %>/<%= res.year %>?_method=DELETE" method="POST">
-                <input type="submit" class="deleteButton" value="🗑"></form>
+            <td class='deleteStat'>
+                <form action="/players/delete/<%= res.playerId %>/<%= first %>/<%= last %>/<%= res.year %>?_method=DELETE" method="POST"> 
+                <input type="submit" class="deleteButtonStat" value="🗑"></form>
             </td>
         </tr>
 

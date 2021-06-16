@@ -74,11 +74,11 @@ body {
 }
 
 .homeLink {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
 
 
-.favorites, .playerIndex, .home, .results, .detail  {
+.favorites, .playerIndex, .home, .results, .detail, .teamsIndex, .teamsDetail  {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,12 +145,27 @@ body {
     font-size: small;
 }
 
+.deleteButtonStat {
+    background-color: #031550;
+    border-radius: 20px;
+    border:1px solid #031550;
+    color: #fafafa;
+    font-size: small;
+}
+
 .deleteButton:hover {
     background-color:#fafafa;
     border:1px solid #031550;
     color: #031550;
-
 } 
+
+.deleteButtonStat:hover {
+    background-color: #a1b2df;
+    border-radius: 20px;
+    border:1px solid #a1b2df;
+    color: #ffffff;
+    font-size: small;
+}
 
 .seasonSubmit:hover {
     background-color: #fafafa;
@@ -163,21 +178,34 @@ table {
     text-align: center;
     font-size: x-small;
     border-collapse: collapse;
-    border-left:.5px solid #a1b2df;
+    border-left:.5px solid #031550;
     background-color: #a1b2df;
 }
 
 th {
     padding: 3px;
-    border-bottom: .5px solid #a1b2df;
-    border-right: .5px solid #a1b2df;
-    background-color: fafafa;
+    border-bottom: .5px solid #031550;
+    border-right: .5px solid #031550;
+    background-color: #a1b6c3;
 }
+
+.tdYear {
+    background-color: #fafafa;
+    border-left-color: #031550;
+}
+
+/* .deleteStat {
+    border-right-color: #a1b2df;
+}
+
+.thDelete {
+    border-right-color: #a1b2df;
+} */
 
 td {
     padding: 5px;
-    border-bottom: .5px solid #a1b2df;
-    border-right: .5px solid #a1b2df;
+    border-bottom: .5px solid #031550;
+    border-right: .5px solid #031550;
 
 }
 
@@ -297,6 +325,22 @@ caption {
     font-size: small;
     background-color: transparent;
     padding: 2px 0;
+}
+
+#resultsLink {
+    background-color: #fafafa;
+    color: #031550;
+    font-weight: bolder;
+    display: flex;
+    min-width: 150px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#resultsLink:hover {
+    background-color: #031550;
+    color: #fafafa;
 }
 
 .detailDiv {
