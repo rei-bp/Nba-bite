@@ -17,8 +17,8 @@
     background-color: transparent;
     background-clip: content-box;
     text-align: left;
-    margin-left: -535px;
-    margin-top: 5px;
+    margin-left: -605px;
+    margin-top: 0px;
 }
 
 .navLink {
@@ -106,6 +106,10 @@ body {
     padding-bottom: 40px;
 }
 
+.resultsSubmit {
+    font-size: .8rem;
+    font-weight: bold;
+}
 
 /* .detailStats {
     display: flex;
@@ -158,6 +162,7 @@ body {
     /* font-size: small; */
     background-color: #ffffff;
     text-align: center;
+    padding: 4px 15px;
 }
 
 .seasonSubmit {
@@ -166,6 +171,8 @@ body {
     border:1px solid #a1b2df;
     color: #fafafa;
     font-style: italic;
+    padding: 4px 15px;
+    
 }
 
 
@@ -215,7 +222,7 @@ table {
 }
 
 th {
-    padding: 5px;
+    padding: 10px;
     border-bottom: .5px solid #031550;
     border-right: .5px solid #031550;
     background-color: #c7d0d6;
@@ -236,10 +243,11 @@ th {
 
 td {
     padding: 5px;
+    font-size: .9rem;
+    font-weight: bold;
     border-bottom: .5px solid #031550;
     border-right: .5px solid #031550;
-    font-size: small;
-
+    /* font-size: small; */
 }
 
 .min {
@@ -247,10 +255,12 @@ td {
 }
 
 .tdStat:hover {
-    background-color: #a1b2df;
+    background-color: #031550;
     font-weight: bold;
-    color: #031550;
+    font-size: 1.1rem;
+    color: #fafafa;
     cursor: none;
+    padding: 0;
 }
 
 
@@ -271,13 +281,13 @@ a:hover {
 
 caption {
     /* text-align: left; */
-    font-size: 1.75em;
+    font-size: 2em;
     font-weight: bold;
     font-style: italic;
     color: #fafafa;
     border:.5px solid #031550;
     background-color: #031550;
-    height: 25px;
+    height: 30px;
     align-content: center;
     align-items: center;
     /* padding-top: 4px;
@@ -351,7 +361,7 @@ caption {
     color: #fafafa;
     border-radius: 20px;
     height: 20px;
-    padding: 2px 10px;
+    padding: 4px 15px;
 }
 
 .resLink:hover {
@@ -362,7 +372,6 @@ caption {
 
 
 .teamResults {
-    font-size: small;
     background-color: transparent;
     padding: 2px 0;
     font-style: italic;
@@ -372,6 +381,7 @@ caption {
     background-color: #fafafa;
     color: #031550;
     font-weight: bolder;
+    font-size: 1.2rem;
     display: flex;
     min-width: 150px;
     align-content: center;
