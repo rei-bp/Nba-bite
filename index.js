@@ -7,7 +7,7 @@ const methodOverride = require('method-override')
 
 //config
 const app = express()
-const PORT = 2408
+// const PORT = 2408
 
 //middleware stuff
 app.set('view engine', 'ejs')
@@ -34,6 +34,6 @@ res.render('index.ejs')
 
 
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 2408, () => {
     console.log('come on and slam, if you wanna jam 👾')
 })
