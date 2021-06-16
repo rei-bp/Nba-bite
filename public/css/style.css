@@ -63,6 +63,7 @@ body {
     align-items: center;
 }
 
+
 .mainTitle {
     display:flex;
     align-items: center;
@@ -77,6 +78,10 @@ body {
     margin-bottom: 5px;
 }
 
+.homeP {
+    background-color: transparent;
+    font-style: italic;
+}
 
 .favorites, .playerIndex, .home, .results, .detail, .teamsIndex, .teamsDetail  {
     display: flex;
@@ -88,7 +93,7 @@ body {
     background-color: #a1b2df;
     border-radius: 20px;
     margin-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 
@@ -113,11 +118,41 @@ body {
     align-content: center;
 } */
 
+.teamSpan {
+    font-weight: bold;
+    background-color: transparent;
+    color: #031550;
+}
+
+.teamDiv {
+    background-color: transparent;
+}
+
+.heightDiv {
+    display: block;
+    background-color: transparent;
+    text-align: left;
+}
+
+#heightId {
+    background-color: transparent;
+}
+
+.playerDiv {
+    background-color: transparent;
+    text-align: left;
+}
+
 .seasonInput {
     width: 50px;
     border-radius: 20px;
     border:1px solid #031550;
     font-size: small;
+    text-align: center;
+}
+
+.go {
+    margin-left: 5px;
 }
 
 .playerInput {
@@ -209,11 +244,15 @@ td {
 
 }
 
+.min {
+    width: 30px;
+}
 
 .tdStat:hover {
     background-color: #a1b2df;
     font-weight: bold;
     color: #031550;
+    cursor: none;
 }
 
 
@@ -252,8 +291,10 @@ caption {
     text-align: center;
     color: #031550;
     font-style: italic;
-    text-decoration: underline;
+    border-bottom: 3px solid #fafafa;
     background-color: transparent;
+    /* padding: 0 70px; */
+    width: 450px;
 
 }
 
@@ -325,6 +366,7 @@ caption {
     font-size: small;
     background-color: transparent;
     padding: 2px 0;
+    font-style: italic;
 }
 
 #resultsLink {
@@ -361,5 +403,5 @@ caption {
 }
 
 .detailTitle {
-    margin-bottom: -10px;
+    margin-bottom: -6px;
 }

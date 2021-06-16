@@ -1,21 +1,31 @@
 
 
 <div class="detail">
-<h1 class="nameTitle detailTitle"><%= resOne.first_name %> <%= resOne.last_name %> </h1>  
-
-<br>Team: <%= resOne.team.full_name %>
-
-<br> Height: <%= resOne.height_feet %>' <%= resOne.height_inches %>"
-
-<br><p class="teamResults">Select year to get season average stats</p>
+<h1 class="nameTitle"><%= resOne.first_name %> <%= resOne.last_name %> </h1>  
+<div class="playerDiv">
+    <span class="teamSpan">Team:</span> <%= resOne.team.full_name %>
+</div>
+<div class="heightDiv">
+   <span class="teamSpan">Height:</span> <span id="heightId"><%= resOne.height_feet %></span>' <%= resOne.height_inches %>"
+</div>
+<p class="teamResults">Select year to get season average stats</p>
 
     <div class="detailDiv">
         <form class="detailForm" action="/players/addseason/<%= resOne.id %>/<%= resOne.first_name %>/<%= resOne.last_name %>" method="POST">
             
             <input type="integer" class="seasonInput" placeholder="2020" name="season">
             
-            <input type="submit" class="seasonSubmit" value="Go!">
+            <input type="submit" class="seasonSubmit go" value="Go!">
         </form>
     </div>
 </div>
 
+<script>
+    const height = document.querySelector('.heightDiv')
+    const checkHeight = document.getElementById('heightId')
+    if ( checkHeight !== "" || checkHeight != null) {
+        height.style.visibility = "visible";
+    } else {
+        height.style.visibility = "hidden";
+    }
+</script>
