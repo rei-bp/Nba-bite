@@ -1,6 +1,7 @@
 * {
     background-color: #fafafa;
     font-family: 'Roboto', sans-serif;
+    font-size: large;
 }
 
 
@@ -48,7 +49,7 @@
     /* -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px; */
     height: 110px;
-    width: 713px;
+    width: 800px;
     margin: 0;
 }
 
@@ -85,7 +86,7 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
-    width: 713px;
+    width: 800px;
     background-color: #a1b2df;
     border-radius: 20px;
     margin-top: 40px;
@@ -154,7 +155,7 @@ body {
 .playerInput {
     border-radius: 20px;
     border: 1px solid #031550;
-    font-size: small;
+    /* font-size: small; */
     background-color: #ffffff;
     text-align: center;
 }
@@ -214,10 +215,10 @@ table {
 }
 
 th {
-    padding: 3px;
+    padding: 5px;
     border-bottom: .5px solid #031550;
     border-right: .5px solid #031550;
-    background-color: #a1b6c3;
+    background-color: #c7d0d6;
 }
 
 .tdYear {
@@ -227,16 +228,17 @@ th {
 
 /* .deleteStat {
     border-right-color: #a1b2df;
-}
+} */
 
 .thDelete {
-    border-right-color: #a1b2df;
-} */
+    width: 40px;
+}
 
 td {
     padding: 5px;
     border-bottom: .5px solid #031550;
     border-right: .5px solid #031550;
+    font-size: small;
 
 }
 
@@ -268,7 +270,7 @@ a:hover {
 }
 
 caption {
-    text-align: left;
+    /* text-align: left; */
     font-size: 1.75em;
     font-weight: bold;
     font-style: italic;
@@ -278,19 +280,20 @@ caption {
     height: 25px;
     align-content: center;
     align-items: center;
-    padding-top: 4px;
-    padding-left: 3px;
-
+    /* padding-top: 4px;
+    padding-left: 3px; */
+    padding: 5px 0;
 }
 
 .nameTitle {
+    font-size: 3rem;
     text-align: center;
     color: #031550;
     font-style: italic;
-    border-bottom: 3px solid #fafafa;
+    border-bottom: 3px solid hsl(230, 100%, 96%);
     background-color: transparent;
     /* padding: 0 70px; */
-    width: 600px;
+    width: 720px;
 
 }
 
@@ -315,7 +318,7 @@ caption {
 .formContainer {
     display: flex;
     background-color: transparent;
-    margin-top: 3px;
+    margin-top: 10px;
 }
 
 .playerSearch {
@@ -359,7 +362,7 @@ caption {
 
 
 .teamResults {
-    /* font-size: small; */
+    font-size: small;
     background-color: transparent;
     padding: 2px 0;
     font-style: italic;
