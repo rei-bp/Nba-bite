@@ -4,10 +4,6 @@
 }
 
 
-.avgContainer {
-font-size: smaller;
-width: 720px;
-}
 
 .navHeader {
     display: flex;
@@ -20,8 +16,8 @@ width: 720px;
     background-color: transparent;
     background-clip: content-box;
     text-align: left;
-    margin-left: -360px;
-    margin-top: -3px;
+    margin-left: -535px;
+    margin-top: 5px;
 }
 
 .navLink {
@@ -29,7 +25,7 @@ width: 720px;
     color: #031550;
     font-style: italic;
     font-weight: bold;
-    font-size: x-small;
+    font-size: small;
     text-decoration: none;
 }
 
@@ -43,7 +39,7 @@ width: 720px;
     align-items: center;
     justify-content: center;
     font-style: italic;
-    font-size: 4em;
+    font-size: 5em;
     color: #031550;
     background-image: url("https://images.unsplash.com/photo-1525973132219-a04334a76080?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1277&q=80");
     background-size: cover;
@@ -52,7 +48,7 @@ width: 720px;
     /* -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px; */
     height: 110px;
-    width: 500px;
+    width: 713px;
     margin: 0;
 }
 
@@ -89,7 +85,7 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
-    width: 500px;
+    width: 713px;
     background-color: #a1b2df;
     border-radius: 20px;
     margin-top: 40px;
@@ -106,7 +102,7 @@ body {
     background-color: #a1b2df;
     border-radius: 20px;
     margin-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 
@@ -147,7 +143,7 @@ body {
     width: 50px;
     border-radius: 20px;
     border:1px solid #031550;
-    font-size: small;
+    /* font-size: small; */
     text-align: center;
 }
 
@@ -177,7 +173,7 @@ body {
     border-radius: 20px;
     border:1px solid #031550;
     color: #fafafa;
-    font-size: small;
+    /* font-size: small; */
 }
 
 .deleteButtonStat {
@@ -185,7 +181,7 @@ body {
     border-radius: 20px;
     border:1px solid #031550;
     color: #fafafa;
-    font-size: small;
+    /* font-size: small; */
 }
 
 .deleteButton:hover {
@@ -199,7 +195,7 @@ body {
     border-radius: 20px;
     border:1px solid #a1b2df;
     color: #ffffff;
-    font-size: small;
+    /* font-size: small; */
 }
 
 .seasonSubmit:hover {
@@ -211,7 +207,7 @@ body {
 
 table {
     text-align: center;
-    font-size: x-small;
+    font-size: small;
     border-collapse: collapse;
     border-left:.5px solid #031550;
     background-color: #a1b2df;
@@ -294,7 +290,7 @@ caption {
     border-bottom: 3px solid #fafafa;
     background-color: transparent;
     /* padding: 0 70px; */
-    width: 450px;
+    width: 600px;
 
 }
 
@@ -363,7 +359,7 @@ caption {
 
 
 .teamResults {
-    font-size: small;
+    /* font-size: small; */
     background-color: transparent;
     padding: 2px 0;
     font-style: italic;
