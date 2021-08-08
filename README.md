@@ -1,4 +1,7 @@
-# Project 2 Pitch Guidelines
+# NBA Bite!
+
+
+## Project 2 Pitch Guidelines
 Project Description and Pitch Guidelines for SEIR SEA P2
 
 
