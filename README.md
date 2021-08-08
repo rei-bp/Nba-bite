@@ -1,5 +1,6 @@
 # NBA Bite!
 
+checkout the TypeScript Conversion [here](https://github.com/rei-bp/nbabite-ts)
 
 ## Project 2 Pitch Guidelines
 Project Description and Pitch Guidelines for SEIR SEA P2
